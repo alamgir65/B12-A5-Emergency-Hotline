@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service</title>
+    <!-- Font Awesome 6 (latest version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQXs9wN3GMWFw1lWvb8UcN72ScR2z7s0BZUqzWveY2h6VGdF0jaGxYkPzVd4Yp7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <style>
+        :root {
+            --primary-color: #015138;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello mamah!</h1>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <div class="flex ml-5">
+                    <img class="w-[70px]" src="./assets/logo.png" alt="">
+                    <h1 class="text-[#015138] text-2xl font-extrabold ml-3 mt-0">Emergency <br> Service</h1>
+                </div>
+            </div>
+            <div class="flex-none mr-5">
+                <button class="btn mr-7 px-7 bg-[#dff1e3] rounded-[20px]"><span id="total-love">0</span><img
+                        class="w-[27px]" src="./assets/heart.png" alt=""></button>
+                <button class="btn mr-7 px-7 bg-[#dff1e3] rounded-[20px]"><span id="total-coin">0</span><img
+                        class="w-[27px]" src="./assets/coin.png" alt=""></button>
+                <button class="btn bg-[#00a63e] rounded-[20px] text-white"><span id="total-copy">0</span>Copy</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="flex flex-col justify-center bg-[#015138] text-white text-center py-7">
+            <img class="w-[100px] mx-auto" src="./assets/logo.png" alt="">
+            <h1 class="text-3xl font-extrabold my-2">Emergency Service Directory</h1>
+            <p class="text-lg font-semibold">Government Emergency Services at Your Fingertip – A Project by Government
+                of the People’s Republic of Bangladesh</p>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <img src="./assets/emergency.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
