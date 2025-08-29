@@ -60,13 +60,10 @@ document.querySelectorAll('.copyBtn').forEach((btn) => {
         document.getElementById('total-copy').innerText = newCopyCount;
         console.log('Copy clicked', newCopyCount);
 
-
         const btn = evt.target.closest('.copyBtn');
-        if (!btn) return;
 
         const selector = btn.getAttribute('data-copy-target');
         const target = document.querySelector(selector);
-        if (!target) return;
 
         const text = 'value' in target ? (target.value ?? '') : (target.textContent ?? '');
         copyToClipboard(text.trim(), btn);
@@ -75,7 +72,6 @@ document.querySelectorAll('.copyBtn').forEach((btn) => {
 
 
 async function copyToClipboard(text, btn) {
-    if (!text) return;
 
     btn.disabled = true;
     const original = btn.textContent;
@@ -110,3 +106,6 @@ async function copyToClipboard(text, btn) {
 function flash(btn, msg) {
     btn.textContent = msg;
 }
+
+
+
